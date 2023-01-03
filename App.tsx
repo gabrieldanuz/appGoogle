@@ -5,6 +5,7 @@ import {
 } from '@expo-google-fonts/lato'
 import Loading from 'expo-app-loading'
 import { Text, View } from 'react-native'
+import Routes from './src/routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -14,9 +15,5 @@ export default function App() {
 
   if (!fontsLoaded) return <Loading />
 
-  return (
-    <View>
-      <Text>Carregou as fontes</Text>
-    </View>
-  )
+  return <Routes />
 }
