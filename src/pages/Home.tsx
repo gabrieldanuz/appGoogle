@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text } from 'react-native'
+import { Header } from '../components/Header'
 import { Load } from '../components/Load'
 
 export function Home() {
@@ -15,7 +16,11 @@ export function Home() {
 
   return (
     <View>
-      <Text>Home</Text>
+      <Header
+        name="Olá"
+        category="Educador(a)"
+        image={require('../assets/teacher_avatar.png')}
+      />
     </View>
   )
 }
